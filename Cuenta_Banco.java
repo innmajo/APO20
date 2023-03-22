@@ -2,8 +2,9 @@ package APO;
 
 public class Cuenta_Bancaria {
 	private String Titular;
-	private double Saldo=0;
 	private int Cuenta=0;
+	private double Saldo=0;
+	private double Deposito=0;
 
 	public void Set_Titular (String Titular) {
 		this.Titular=Titular;
@@ -17,6 +18,10 @@ public class Cuenta_Bancaria {
 		this.Saldo=Saldo;
 	}
 	
+	public void Set_Deposito (double Deposito) {
+		this.Deposito=Deposito;
+	}
+	
 	
 	public String Get_Titular() {
 		return Titular;
@@ -26,7 +31,15 @@ public class Cuenta_Bancaria {
 		return Cuenta;
 	}
 	
-	public double Get_Saldo() {
+	public double Get_SaldoAnterior() {
 		return Saldo;
+	}
+	
+	public double Get_Deposito() {
+		return Deposito;
+	}
+	
+	public double Get_Saldo() {
+		return Saldo+Deposito;
 	}
 }

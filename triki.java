@@ -325,6 +325,7 @@ public class Empty {
 			again=never.nextByte();
 			switch(again) {
 			case 1:
+				System.out.println("Gracias por participar ^^");
 				System.exit(-1);
 				break;
 			case 2:

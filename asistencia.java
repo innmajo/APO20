@@ -10,7 +10,7 @@ public class empty {
 		int nFilas,nColumnas,l=1;
 		
 		nFilas=Integer.parseInt(JOptionPane.showInputDialog("Dijite la cantidad de estudiantes"));
-		nColumnas=Integer.parseInt(JOptionPane.showInputDialog("Dijite el numero de semanas"));
+		nColumnas=Integer.parseInt(JOptionPane.showInputDialog("Dijite el numero de semanas de clase"));
 		
 		String [][]matriz1=new String[nFilas][nColumnas];
 		matriz1[0][0]=" Nombre ";
